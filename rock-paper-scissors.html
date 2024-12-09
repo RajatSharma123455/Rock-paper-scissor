@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+
+    <link rel="stylesheet" href="rockcss.css">
+</head>
+<body class="all">
+    <p class="toper">Rock paper scissors</p>
+
+    <button class="img-button" onclick="
+    computerMove();
+    finalResult('rock');
+    calResult();
+    
+    showOnScreen('rock');
+    "><img src="rock-emoji.png" class="img-icon">
+    </button>
+
+    <button class="img-button"  onclick="
+    computerMove();
+    finalResult('paper');
+    calResult();
+    
+     showOnScreen('paper');
+    "><img src="paper-emoji.png" class="img-icon"></button>
+
+    <button class="img-button" onclick="
+    computerMove();
+    finalResult('scissor');
+    calResult();
+    
+     showOnScreen('scissor');
+    "><img src="scissor-emoji.png" class="img-icon"></button>
+
+    
+   <p class="showMoves" >
+   
+   </p>
+    <p class="screen"></p>
+
+    <button onclick="resetvalue();
+    showOnScreen('');
+    "
+    class="resetmove"
+    >Reset score</button>
+    <script src="rockscript.js"></script>
+
+</body>
+</html>
